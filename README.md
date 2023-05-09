@@ -1,17 +1,14 @@
-Travel App
-Welcome to our travel app! This is a web application that allows users to plan and organize their travels, and discover new destinations around the world. Our goal is to help travelers save time and make the most out of their trips by providing them with a user-friendly interface and useful features.
+Chatbot App
+Welcome to the chatbot app! This is a simple application that allows users to chat with a computer program that simulates human conversation, also known as a chatbot. Our chatbot can answer questions, provide information, and even make small talk with users.
 
 Features
-The travel app includes the following features:
+The chatbot app includes the following features:
 
-Destination search: Users can search for destinations by name, country, or activity.
-Trip planning: Users can create and manage their trips by adding activities, accommodations, and transportation options.
-Reviews and ratings: Users can read and write reviews and ratings for destinations, activities, and accommodations.
-Travel guides: Users can access travel guides and recommendations for popular destinations, activities, and cuisines.
-Social sharing: Users can share their travel plans and experiences with their friends and followers on social media.
+Natural language processing: Our chatbot uses natural language processing (NLP) techniques to understand and interpret user messages.
+Customizable responses: Users can customize the chatbot's responses by adding or editing predefined templates and responses.
+Integration with messaging platforms: Users can integrate the chatbot with messaging platforms such as Facebook Messenger, Slack, or Telegram.
+Analytics: Users can track and analyze the chatbot's performance, including the number of conversations, messages, and user satisfaction ratings.
 Technologies
-The travel app is built using the following technologies:
+The chatbot app is built using the following technologies:
 
-Front-end: HTML, CSS, JavaScript, React
-Back-end: Node.js, Express.js, MongoDB
-APIs: Google Maps, TripAdvisor, OpenWeatherMap
+Front-end: HTML, CSS, JavaScript
