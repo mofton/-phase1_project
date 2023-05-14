@@ -105,3 +105,25 @@ function clearChat() {
   document.getElementById("listUL").innerHTML = "";
   waitAndResponce("intro");
 }
+
+function sendTextMessage(textToSend) {
+  setTimeout(setLastSeen, 1000);
+  var date = new Date();
+  var myLI = document.createElement("li");
+  var myDiv = document.createElement("div");
+  var greendiv = document.createElement("div");
+  var dateLabel = document.createElement("label");
+  dateLabel.setAttribute("id", "sentlabel");
+  dateLabel.id = "sentlabel";
+  dateLabel.innerText = date.getHours() + ":" + date.getMinutes();
+  myDiv.setAttribute("class", "received");
+  greendiv.setAttribute("class", "grey");
+  greendiv.innerHTML = textToSend;
+  myDiv.appendChild(greendiv);
+  myLI.appendChild(myDiv);
+  greendiv.appendChild(dateLabel);
+  document.getElementById("listUL").appendChild(myLI);
+  var s = document.getElementById("chatting");
+  s.scrollTop = s.scrollHeight;
+  playSound();
+}
