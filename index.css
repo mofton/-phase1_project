@@ -50,3 +50,52 @@ nav {
   color: #8696a0;
   font-size: small;
 }
+.scrollable {
+  overflow-y: scroll;
+  color: #fff;
+  display: flex;
+  height: 88%;
+  flex-direction: column;
+  background-image: url("images/bg.webp");
+  align-items: flex-end;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.scrollable .chatting {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollable .chatting::-webkit-scrollbar {
+  display: none;
+}
+
+#listUL {
+  overflow-y: hidden;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#listUL li {
+  width: 100%;
+  text-decoration: none;
+  flex-direction: row-reverse;
+}
+
+.sent {
+  text-align: end;
+  float: right;
+  width: auto;
+  max-width: 45%;
+}
