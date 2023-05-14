@@ -62,3 +62,41 @@ function sendMsg() {
   input.value = "";
   playSound();
 }
+function waitAndResponce(inputText) {
+  var lastSeen = document.getElementById("lastseen");
+  lastSeen.innerText = "typing...";
+  switch (inputText.toLowerCase().trim()) {
+    case "intro":
+      setTimeout(() => {
+        sendTextMessage(
+          "Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Mofeid Moshreky</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>Ch. flatiron school 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>"
+        );
+      }, 2000);
+      break;
+    case "help":
+      sendTextMessage(
+        "<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<span class='bold'></span><span class='bold'>'education'</span> - to get my education details<br><span class='bold'></span> <br><span class='bold'> </span> - to get ways to connect with me<br><span class='bold'><span class='bold'>'about'</span> - to know about this site</span>"
+      );
+      break;
+
+    case "education":
+      sendTextMessage(
+        "I am currently Software Engineering Studient at Flatiron school. <br>Passing Year : 2023<br><br>I have completed my High school in Cairo Egypt. <br>Passing Year:1992<br>Result:86.06%<br><br>"
+      );
+      break;
+
+    case "about":
+      sendTextMessage(
+        "🛠️💻 This portfolio website is built using HTML, CSS and JavaScript from SCRATCH!<br><br>👨🏻‍💻 Designed and Developed by <span class='bold'>Mofeid Moshreky</a> with ❤️</span>"
+      );
+
+      break;
+    default:
+      setTimeout(() => {
+        sendTextMessage(
+          "Hey I couldn't catch you...😢<br>Send 'help' to know more about usage."
+        );
+      }, 2000);
+      break;
+  }
+}
