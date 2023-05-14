@@ -127,3 +127,25 @@ function sendTextMessage(textToSend) {
   s.scrollTop = s.scrollHeight;
   playSound();
 }
+
+function sendResponse() {
+  setTimeout(setLastSeen, 1000);
+  var date = new Date();
+  var myLI = document.createElement("li");
+  var myDiv = document.createElement("div");
+  var greendiv = document.createElement("div");
+  var dateLabel = document.createElement("label");
+  dateLabel.innerText = date.getHours() + ":" + date.getMinutes();
+  myDiv.setAttribute("class", "received");
+  greendiv.setAttribute("class", "grey");
+  dateLabel.setAttribute("class", "dateLabel");
+  greendiv.innerText =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. ";
+  myDiv.appendChild(greendiv);
+  myLI.appendChild(myDiv);
+  greendiv.appendChild(dateLabel);
+  document.getElementById("listUL").appendChild(myLI);
+  var s = document.getElementById("chatting");
+  s.scrollTop = s.scrollHeight;
+  playSound();
+}
