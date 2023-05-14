@@ -100,3 +100,8 @@ function waitAndResponce(inputText) {
       break;
   }
 }
+
+function clearChat() {
+  document.getElementById("listUL").innerHTML = "";
+  waitAndResponce("intro");
+}
