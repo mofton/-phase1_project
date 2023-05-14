@@ -75,7 +75,7 @@ function waitAndResponce(inputText) {
       break;
     case "help":
       sendTextMessage(
-        "<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<span class='bold'></span><span class='bold'>'education'</span> - to get my education details<br><span class='bold'></span> <br><span class='bold'> </span> - to get ways to connect with me<br><span class='bold'><span class='bold'>'about'</span> - to know about this site</span>"
+        "<span class='sk'>Send Keyword to get what you want to know about me...<br><span class='bold'></span><span class='bold'>'education'</span> - to get my education details<br><span class='bold'></span> <span class='bold'> </span> <br><span class='bold'><span class='bold'>'about'</span> - to know about this site</span>"
       );
       break;
 
