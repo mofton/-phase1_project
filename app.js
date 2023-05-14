@@ -149,3 +149,6 @@ function sendResponse() {
   s.scrollTop = s.scrollHeight;
   playSound();
 }
+function playSound() {
+  audio.play();
+}
